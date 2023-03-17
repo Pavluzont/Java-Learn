@@ -1,9 +1,12 @@
 package Exercise8;
 
+import Exercise8.bank.Bank;
+import Exercise8.bank.BankManager;
+
 public class Customer {
 
     public void accessBankVault(Bank bank) {
-        bank.accessVault();
+//        bank.accessVault();
     }
 
     public void accessBankVault(BankManager manager, Bank bank) {
