@@ -11,14 +11,17 @@ public class Exercise5 {
     }
 
     public static String findCity(String sentence) {
+
         return sentence.split(",")[1].strip();
     }
 
     public static String findState(String sentence) {
+
         return sentence.split(",")[2].strip().split(" ")[0];
     }
 
     public static String findPostalCode(String sentence) {
+
         return sentence.split(",")[2].strip().split(" ")[1];
     }
     public static void main(String[] args) {
