@@ -1,6 +1,6 @@
 package Part6;
 
-public class Exercse5 {
+public class Exercise5 {
     public static void main(String[] args) {
         String[] days = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
