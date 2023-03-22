@@ -16,4 +16,4 @@ public class Exercise4 {
         System.out.println(matcher.group("state"));
         System.out.println(matcher.group("postCode"));
     }
-} 
+}
