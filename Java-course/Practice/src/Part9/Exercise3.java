@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Exercise3 {
-    record Car(String make, String model, Year year){}
+    record Car(String brand, String model, Year year){}
 
     public static void main(String[] args) {
         Map<String, Car> cars = new HashMap<>();
