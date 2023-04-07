@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Exercise2 {
-    record Car(String brand, String model, Year year) {
-    }
+    record Car(String brand, String model, Year year) {}
 
     public static void main(String[] args) {
         List<Car> cars = new ArrayList<>();
