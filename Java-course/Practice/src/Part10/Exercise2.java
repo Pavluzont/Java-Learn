@@ -3,8 +3,11 @@ package Part10;
 import java.time.Year;
 import java.util.ArrayList;
 import java.util.List;
-public class Exercise1 {
-    record Car(String brand, String model, Year year){}
+
+public class Exercise2 {
+    record Car(String brand, String model, Year year) {
+    }
+
     public static void main(String[] args) {
         List<Car> cars = new ArrayList<>();
 
@@ -15,7 +18,7 @@ public class Exercise1 {
         cars.add(new Car("Kia", "Rio", Year.of(2014)));
 
         cars.stream()
-                .map(Car::model)
+                .filter(car -> car.year.isAfter(Year.of(1990)))
                 .forEach(System.out::println);
     }
 }
