@@ -1,4 +1,4 @@
-package Part9;
+package Part10;
 
 import java.time.Year;
 import java.util.ArrayList;
@@ -14,8 +14,6 @@ public class Exercise1 {
         cars.add(new Car("Dodge", "Charger", Year.of(1963)));
         cars.add(new Car("Kia", "Rio", Year.of(2014)));
 
-        for (Car car : cars) {
-            System.out.println(car);
-        }
+        cars.stream().map(Car::model).forEach(System.out::println);
     }
 }
